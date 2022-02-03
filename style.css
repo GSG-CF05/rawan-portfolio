@@ -20,8 +20,14 @@ button {
   border: none;
   outline: none;
 }
+body {
+  background-color: #18191b;
+}
 .container {
-  width: 1180px;
+  width: 1170px;
+  margin: 0 auto;
+}
+.info-container {
   margin: 0 auto;
 }
 /* start header section  */
@@ -40,10 +46,10 @@ button {
   font-weight: bold;
   padding: 30px 30px 30px 100px;
 }
-.header .logo h2:hover{
-   color: #ff5d20;
+.header .logo h2:hover {
+  color: #ff5d20;
 }
- 
+
 ul li {
   padding-top: 35px;
 }
@@ -89,4 +95,114 @@ ul li {
   background: #fff;
   border: 1px solid #fff;
   color: #ff5d20;
+}
+/* start info area */
+.info-area {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ff5d20;
+  color: #fff;
+  padding: 20px 0 20px 0;
+  margin: 0 auto;
+}
+.info-area .info-one,
+.info-area .info-second,
+.info-area .info-third {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 1.8;
+}
+.icon i {
+  font-size: 30px;
+  color: #ff5d20;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  margin-right: 20px;
+}
+.info-area .info-one:hover .icon i,
+.info-area .info-second:hover .icon i,
+.info-area .info-third:hover .icon i {
+  background-color: #000;
+  color: #fff;
+}
+/* start about me section  */
+.about-me {
+  max-width: 100%;
+  border: 1px solid #202020;
+  background-color: #18191b;
+  padding: 50px;
+  margin-top: 10px;
+  height: 400px;
+}
+.about-me h2 {
+  color: #ff5d20;
+  font-size: 26px;
+  padding-bottom: 15px;
+}
+.about-me p {
+  color: #888;
+  text-transform: capitalize;
+  line-height: 1.6;
+  width: 70%;
+  margin-bottom: 20px;
+}
+.skills h3 {
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 0 30px 30px 30px 30px;
+  font-size: 24px;
+}
+.skills span {
+  background-color: #ff5d20;
+  color: #fff;
+  padding: 15px 30px 15px 30px;
+  border-radius: 50px;
+  margin-left: 15px;
+}
+/* start services secion  */
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.heading {
+  text-align: center;
+  color: #fff;
+  padding: 40px;
+  line-height: 2;
+}
+.heading h3 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.services .service i {
+  color: #fff;
+  background-color: #ff5d20;
+  padding: 25px;
+  font-size: 18px;
+  border-radius: 50%;
+  text-align: center;
+}
+.services .service {
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
+  line-height: 1.7;
+  border: 1px solid #444;
+  margin-left: 20px;
+  background-color: #333333;
+  padding: 10px;
+}
+.services .service p {
+  padding-top: 15px;
+}
+.services .service i:hover .icon {
+  border: 1px solid #ff5d20;
+  padding: 10px;
 }
